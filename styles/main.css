@@ -1,47 +1,72 @@
 @font-face {
-  font-family: PoppinsBold;
-  src: url(../fonts/Poppins-Bold.ttf);
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 @font-face {
-  font-family: PoppinsRegular;
-  src: url(../fonts/Poppins-Regular.ttf);
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-  font-family: PoppinsLight;
-  src: url(../fonts/Poppins-Light.ttf);
+  font-family: "Poppins";
+  src: url("../assets/fonts/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
 }
-@font-face {
-  font-family: PoppinsSemiBold;
-  src: url(../fonts/Poppins-SemiBold.ttf);
+/* Add other Poppins font variations similarly */
+:root {
+  /* Primary Colors */
+  --primary-color: #3498db;
+  --primary-dark: #2980b9;
+  --primary-light: #5da6d6;
+  /* Secondary Colors */
+  --secondary-color: #2ecc71;
+  --secondary-dark: #27ae60;
+  --secondary-light: #58d68d;
+  /* Accent Colors */
+  --accent-color: #e67e22;
+  --accent-dark: #d35400;
+  --accent-light: #f39c12;
+  /* Neutral Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #bdc3c7;
+  --light-gray: #ecf0f1;
+  --dark-gray: #34495e;
+  /* Additional Colors */
+  --success-color: #4caf50;
+  --error-color: #e74c3c;
+  --info-color: #3498db;
+  --warning-color: #f39c12;
 }
-@font-face {
-  font-family: PoppinsMedium;
-  src: url(../fonts/Poppins-Medium.ttf);
+
+/* +++ Example usage +++
+.container {
+    @include flex(row, space-between, center);
 }
-@font-face {
-  font-family: FiraSansBold;
-  src: url(../fonts/FiraSans-Bold.ttf);
+.wrapper {
+    @include column();
 }
-@font-face {
-  font-family: FiraSansRegular;
-  src: url(../fonts/FiraSans-Regular.ttf);
+.box {
+    @include center;
+} 
+*/
+/* +++ Example usage +++
+.my-text {
+    @include font('Poppins', bold); // Use Poppins font with bold weight
 }
-@font-face {
-  font-family: FiraSansLight;
-  src: url(../fonts/FiraSans-Light.ttf);
+*/
+html {
+  box-sizing: border-box;
 }
-@font-face {
-  font-family: FiraSansSemiBold;
-  src: url(../fonts/FiraSans-SemiBold.ttf);
-}
-@font-face {
-  font-family: FiraSansMedium;
-  src: url(../fonts/FiraSans-Medium.ttf);
-}
-* {
+
+*, *::before, *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: inherit;
   list-style: none;
   text-decoration: none;
 }
@@ -49,5 +74,6 @@
 .container {
   width: 100%;
   max-width: 1300px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

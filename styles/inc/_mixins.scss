@@ -1,49 +1,56 @@
-@mixin flex {
+// Display mixins
+@mixin flex($direction: row, $justify: center, $align: center) {
     display: flex;
-    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
 }
-@mixin flex-between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+@mixin column($align: flex-start) {
+    @include flex(column, null, $align);
 }
-@mixin flex-around {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-@mixin column_left{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-}
-@mixin column_center {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-@mixin column_right {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: column;
-}
+
 @mixin center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, center, center);
 }
-@mixin light_font {
-    font-family: PoppinsLight, sans-serif;
+
+/* +++ Example usage +++
+.container {
+    @include flex(row, space-between, center);
 }
-@mixin regular_font {
-    font-family: PoppinsRegular, sans-serif;
+.wrapper {
+    @include column();
 }
-@mixin medium_font {
-    font-family: PoppinsMedium, sans-serif;
+.box {
+    @include center;
+} 
+*/
+
+// Display mixins end
+
+// Font mixins start  
+@mixin font($family: sans-serif, $weight: normal) {
+    font-family: $family;
+
+    $weights: (
+        light: 300,
+        normal: 400,
+        medium: 500,
+        semibold: 600,
+        bold: 700
+    );
+
+    @if map-has-key($weights, $weight) {
+        font-weight: map-get($weights, $weight);
+    } @else {
+        font-weight: $weight;
+    }
 }
-@mixin semibold_font {
-    font-family: PoppinsSemiBold, sans-serif;
+  
+/* +++ Example usage +++
+.my-text {
+    @include font('Poppins', bold); // Use Poppins font with bold weight
 }
-@mixin bold_font {
-    font-family: PoppinsBold, sans-serif;
-}
+*/
+
+// Font mixins end

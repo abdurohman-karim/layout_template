@@ -1,13 +1,19 @@
-*{
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
     list-style: none;
     text-decoration: none;
 }
 
-.container{
+.container {
     width: 100%;
     max-width: 1300px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 }
+  
