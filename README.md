@@ -46,6 +46,7 @@ The `flex` mixin allows you to create flexible layouts using flexbox properties.
 .selector {
   @include flex(row, center, flex-start);
 }
+```
 
 
 ## Contributing
