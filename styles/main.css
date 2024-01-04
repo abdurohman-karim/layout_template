@@ -1,0 +1,53 @@
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: FiraSansBold;
+  src: url(../fonts/FiraSans-Bold.ttf);
+}
+@font-face {
+  font-family: FiraSansRegular;
+  src: url(../fonts/FiraSans-Regular.ttf);
+}
+@font-face {
+  font-family: FiraSansLight;
+  src: url(../fonts/FiraSans-Light.ttf);
+}
+@font-face {
+  font-family: FiraSansSemiBold;
+  src: url(../fonts/FiraSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: FiraSansMedium;
+  src: url(../fonts/FiraSans-Medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

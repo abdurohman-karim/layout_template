@@ -1,0 +1,49 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@mixin column_left{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+@mixin column_center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin column_right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin light_font {
+    font-family: PoppinsLight, sans-serif;
+}
+@mixin regular_font {
+    font-family: PoppinsRegular, sans-serif;
+}
+@mixin medium_font {
+    font-family: PoppinsMedium, sans-serif;
+}
+@mixin semibold_font {
+    font-family: PoppinsSemiBold, sans-serif;
+}
+@mixin bold_font {
+    font-family: PoppinsBold, sans-serif;
+}
