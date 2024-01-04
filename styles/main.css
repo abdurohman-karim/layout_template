@@ -54,6 +54,25 @@
     @include center;
 } 
 */
+/* +++ Example Usage Grid +++
+.container {
+  @include grid-container(3, 20px);
+}
+
+.item1 {
+  @include grid-item(1 / span 2, 1);
+}
+
+.item2 {
+  @include grid-item(2, 2);
+}
+
+.centered {
+  @include grid-item;
+  @include center-content;
+}
+
+*/
 /* +++ Example usage +++
 .my-text {
     @include font('Poppins', bold); // Use Poppins font with bold weight

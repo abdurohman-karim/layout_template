@@ -28,6 +28,47 @@
 
 // Display mixins end
 
+// Display Grid start
+@mixin grid-container($columns: auto, $gap: 10px) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+// Grid Item Mixin
+@mixin grid-item($column: span 1, $row: span 1) {
+    grid-column: $column;
+    grid-row: $row;
+}
+
+// Center Content within Grid Item Mixin
+@mixin center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* +++ Example Usage Grid +++
+.container {
+  @include grid-container(3, 20px);
+}
+
+.item1 {
+  @include grid-item(1 / span 2, 1);
+}
+
+.item2 {
+  @include grid-item(2, 2);
+}
+
+.centered {
+  @include grid-item;
+  @include center-content;
+}
+
+*/
+// Display Grid end
+
 // Font mixins start  
 @mixin font($family: sans-serif, $weight: normal) {
     font-family: $family;

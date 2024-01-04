@@ -48,6 +48,29 @@ The `flex` mixin allows you to create flexible layouts using flexbox properties.
 }
 ```
 
+# Grid Mixins Usage
+
+These SCSS mixins simplify the creation of grid layouts using CSS Grid.
+
+## Grid Container Mixin
+
+The `grid-container` mixin helps create a grid container by defining the number of columns and gap between them.
+
+### Usage
+
+```scss
+.container {
+  @include grid-container(3, 20px);
+}
+.item1 {
+  @include grid-item(1 / span 2, 1);
+}
+.item2 {
+  @include grid-item(2, 2);
+}
+
+```
+
 
 ## Contributing
 
