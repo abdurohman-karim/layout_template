@@ -28,7 +28,7 @@ Briefly explain the structure of the project and its important directories/files
 
 Provide instructions on how to use or run the project:
 
-1. Clone this repository: `git clone https://github.com/abdurohman-karim/layout_project.git`
+1. Clone this repository: `git clone https://github.com/abdurohman-karim/layout_template.git`
 2. Open `index.html` in your browser to view the project.
 
 Optionally, include any additional setup or installation instructions.
