@@ -60,6 +60,7 @@ The `grid-container` mixin helps create a grid container by defining the number 
 
 ```scss
 .container {
+  @include grid-container(cols, gap);
   @include grid-container(3, 20px);
 }
 .item1 {
