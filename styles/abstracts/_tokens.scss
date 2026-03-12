@@ -1,0 +1,61 @@
+$colors: (
+  "primary": #3498db,
+  "primary-dark": #2980b9,
+  "primary-light": #5da6d6,
+  "secondary": #2ecc71,
+  "secondary-dark": #27ae60,
+  "secondary-light": #58d68d,
+  "accent": #e67e22,
+  "accent-dark": #d35400,
+  "accent-light": #f39c12,
+  "white": #ffffff,
+  "black": #000000,
+  "gray-100": #f5f7fa,
+  "gray-200": #ecf0f1,
+  "gray-400": #bdc3c7,
+  "gray-700": #34495e,
+  "text": #1f2933,
+  "background": #ffffff,
+  "border": #e1e6eb,
+  "success": #4caf50,
+  "error": #e74c3c,
+  "info": #3498db,
+  "warning": #f39c12
+);
+
+$spacing: (
+  "2xs": 0.25rem,
+  "xs": 0.5rem,
+  "sm": 0.75rem,
+  "md": 1rem,
+  "lg": 1.5rem,
+  "xl": 2rem,
+  "2xl": 3rem
+);
+
+$radius: (
+  "sm": 4px,
+  "md": 8px,
+  "lg": 12px
+);
+
+:root {
+  --font-base: "Poppins", "Fira Sans", Arial, sans-serif;
+  --font-heading: "Poppins", "Fira Sans", Arial, sans-serif;
+  --container-width: 1200px;
+  --container-padding: 1rem;
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $spacing {
+    --space-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $radius {
+    --radius-#{$name}: #{$value};
+  }
+}

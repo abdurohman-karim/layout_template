@@ -1,0 +1,24 @@
+{
+  "name": "layout-template",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modern HTML + SCSS layout starter kit",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "dev": "sass --watch styles/main.scss:styles/main.css --style=expanded --source-map",
+    "build": "sass styles/main.scss:styles/main.css --style=compressed --no-source-map",
+    "lint:styles": "stylelint \"styles/**/*.scss\"",
+    "format": "prettier --write \"**/*.{html,scss,js,md,json}\"",
+    "format:check": "prettier --check \"**/*.{html,scss,js,md,json}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1",
+    "sass": "^1.97.3",
+    "stylelint": "^17.4.0",
+    "stylelint-config-standard-scss": "^17.0.0",
+    "stylelint-scss": "^6.8.1"
+  }
+}

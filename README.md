@@ -1,84 +1,58 @@
-# Sample Project
+# Layout Template Starter Kit
 
-This project is a sample layout template utilizing HTML, SCSS, and JavaScript.
+Современный стартовый шаблон для верстки на HTML + SCSS с аккуратной структурой стилей, минимальным набором инструментов и понятным DX.
 
-## Table of Contents
+## Что внутри
 
-- [Introduction](#introduction)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- HTML + SCSS (Dart Sass)
+- Чистая модульная архитектура стилей
+- Готовые миксины, токены, базовые утилиты
+- Prettier для форматирования
+- Stylelint для качества SCSS
 
-## Introduction
+## Быстрый старт
 
-Describe briefly what this project is about and its purpose.
+1. Установить зависимости:
 
-## Project Structure
-
-Briefly explain the structure of the project and its important directories/files.
-
-- `inc/`: Contains SCSS files for imports.
-- `css/`: Stores compiled CSS files.
-- `js/`: Houses JavaScript files.
-- `fonts/`: Includes font files used in the project.
-- `index.html`: Main HTML file.
-
-## Usage
-
-Provide instructions on how to use or run the project:
-
-1. Clone this repository: `git clone https://github.com/abdurohman-karim/layout_template.git`
-2. Open `index.html` in your browser to view the project.
-
-Optionally, include any additional setup or installation instructions.
-
-# SCSS Mixins Usage Guide
-
-This document explains how to use the SCSS mixins provided in this project for flexible layout styling.
-
-## `flex` Mixin
-
-The `flex` mixin allows you to create flexible layouts using flexbox properties.
-
-
-```scss
-.selector {
-  @include flex(row, center, flex-start);
-}
+```bash
+npm install
 ```
 
-# Grid Mixins Usage
+2. Запустить режим разработки (watch):
 
-These SCSS mixins simplify the creation of grid layouts using CSS Grid.
-
-## Grid Container Mixin
-
-The `grid-container` mixin helps create a grid container by defining the number of columns and gap between them.
-
-### Usage
-
-```scss
-.container {
-  @include grid-container(cols, gap);
-  @include grid-container(3, 20px);
-}
-.item1 {
-  @include grid-item(1 / span 2, 1);
-}
-.item2 {
-  @include grid-item(2, 2);
-}
-
+```bash
+npm run dev
 ```
 
+3. Открыть `index.html` в браузере.
 
-## Contributing
+## Скрипты
 
-Explain how others can contribute to the project, whether through bug fixes, improvements, or new features. Include information about how to submit pull requests or raise issues.
+- `npm run dev` — watch-компиляция SCSS в `styles/main.css`
+- `npm run build` — production-компиляция (минификация)
+- `npm run lint:styles` — проверка SCSS
+- `npm run format` — автоформатирование файлов
+- `npm run format:check` — проверка форматирования
 
-## License
+## Структура проекта
 
-Indicate the license under which the project is distributed. Developer: @abdurohman-karim
+```
+assets/           # Шрифты и прочие статические файлы
+js/               # JS-скрипты
+styles/           # SCSS-архитектура и главный entry
+index.html        # Точка входа
+```
 
-This project is licensed under the [MIT License](LICENSE).
+Подробно:
+- `docs/architecture.md` — общая архитектура
+- `docs/styles.md` — SCSS-структура и правила
+- `docs/getting-started.md` — установка и запуск
+- `docs/workflow.md` — рабочий процесс
+- `docs/components.md` — добавление компонентов
+- `docs/conventions.md` — нейминг и лучшие практики
+
+## Принципы
+
+- Минимум зависимости, максимум читаемости.
+- Никакого legacy `@import` — только `@use`/`@forward`.
+- Масштабируемость без усложнения.

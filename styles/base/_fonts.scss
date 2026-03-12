@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+$font-path: "../assets/fonts";
+
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-Thin.ttf", 100, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-ThinItalic.ttf", 100, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-ExtraLight.ttf", 200, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-ExtraLightItalic.ttf", 200, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-Light.ttf", 300, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-LightItalic.ttf", 300, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-Regular.ttf", 400, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-Italic.ttf", 400, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-Medium.ttf", 500, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-MediumItalic.ttf", 500, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-SemiBold.ttf", 600, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-SemiBoldItalic.ttf", 600, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-Bold.ttf", 700, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-BoldItalic.ttf", 700, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-ExtraBold.ttf", 800, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-ExtraBoldItalic.ttf", 800, italic);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-Black.ttf", 900, normal);
+@include font-face("Poppins", "#{$font-path}/Poppins/Poppins-BlackItalic.ttf", 900, italic);
+
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-Thin.ttf", 100, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-ThinItalic.ttf", 100, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-ExtraLight.ttf", 200, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-ExtraLightItalic.ttf", 200, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-Light.ttf", 300, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-LightItalic.ttf", 300, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-Regular.ttf", 400, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-Italic.ttf", 400, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-Medium.ttf", 500, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-MediumItalic.ttf", 500, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-SemiBold.ttf", 600, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-SemiBoldItalic.ttf", 600, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-Bold.ttf", 700, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-BoldItalic.ttf", 700, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-ExtraBold.ttf", 800, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-ExtraBoldItalic.ttf", 800, italic);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-Black.ttf", 900, normal);
+@include font-face("Fira Sans", "#{$font-path}/Fira_Sans/FiraSans-BlackItalic.ttf", 900, italic);
